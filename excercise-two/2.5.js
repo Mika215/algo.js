@@ -1,11 +1,12 @@
-const readlineSync = require("readline-sync");
+const readlineSync = require(`readline-sync`);
 let favouriteNumber=42;
-let userInput=readlineSync.question("enter your favourite number");
-userInput=Number(userInput);
+let userInput=parseInt(readlineSync.question(`enter your favourite number `));
 while(favouriteNumber!==userInput){
-    userInput=readlineSync.question("Are you sure ?\nPlease enter your favourite number again");
+    userInput=parseInt(readlineSync.question(`Are you sure ?\nPlease enter your favourite number again `));
     continue;
 }
+
+console.log(`Hmmmm...${userInput} Good to know!`);
 
 
 

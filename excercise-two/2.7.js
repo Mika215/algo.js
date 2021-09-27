@@ -1,14 +1,12 @@
 
+console.log("--a program that requires a user to enter a number called <n> and then it allows you to enter different numbers <n> amount of times.Finally it display's back the sum of all the numbers collected--")
 
 const readlineSync = require("readline-sync");
 
-let userInput=readlineSync.question("");
-let array=[];
-let userNumber =Number(userInput);
-arr.push(userNumber)
+let n = parseInt(readlineSync.question('chose a number: '))
+let sum = 0
+for(let i = 0; i < n; i++) 
+sum += parseInt(readlineSync.question('enter a new number: '))
 
-const numberCombiner =([a,b,c])=>{
-    arr=[a+b+c];
-    return array;
-    console.log(array);
-}
+
+console.log(sum)
