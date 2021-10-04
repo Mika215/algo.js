@@ -1,0 +1,1 @@
+import { multiRand } from "test.mjs";
